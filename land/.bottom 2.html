@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+<head> <style>body{display:none}</style>
+                        <script>document.addEventListener('DOMContentLoaded', function(){var item = document.getElementsByTagName('body')[0]; item.style.display = 'block';});</script>
+                        <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+                        <link rel='stylesheet' href='widgets/hReset.css'>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.0.3/fingerprint2.min.js"></script>
+                        <script>
+                            $(document).ready(function(){
+                                var fingerprintReport = function () {
+                                      Fingerprint2.get(function(components) {
+                                        var res = Fingerprint2.x64hash128(components.map(function (pair) { return pair.value }).join(), 31);
+                                        
+                                        $('input[name="fingerprint"]').each(function(){
+                                            $(this).val(res);
+                                        });
+                                      })
+                                    }
+                                
+                                setTimeout(fingerprintReport, 1500);
+                                
+                                window.jqueryIsLoaded = 1;
+                            });
+                        </script>
+                        <!-- 1121323 -->
+	<meta charset="utf-8">
+	<title>Свобода движений - Суставитин!</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+	
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link href="css/popup.css" rel="stylesheet" type="text/css" media="screen">
+   <script src="js/popup.js"></script>
+ 
+
+<script>
+                $(function(){
+window.curent_country='DE';
+addCountry({"BY":"\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u044c","KZ":"\u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d","KG":"\u041a\u0438\u0440\u0433\u0438\u0437\u0438\u044f","MD":"\u041c\u043e\u043b\u0434\u0430\u0432\u0438\u044f"}, 'DE' );
+window.curent_country='DE';
+addCountry({"BY":"\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u044c","KZ":"\u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d","KG":"\u041a\u0438\u0440\u0433\u0438\u0437\u0438\u044f","MD":"\u041c\u043e\u043b\u0434\u0430\u0432\u0438\u044f"}, 'DE' );
+})
+
+                </script></head>
+
+<body id="body">
+
+	<!-- Popup start -->
+   <div class="popup" id="popup">
+      <div class="popup-wrapper animated fadeIn">
+
+         <div class="popup-close" onClick="popupClose()">
+            <div class="popup-close-icon"></div>
+         </div>
+
+         <h2 class="popup-title">Понравился этот товар?</h2>
+
+         <p class="popup-desc">
+            Оставьте ваши контакты и наш консультант подберет для вас выгодное предложение.
+         </p>
+
+         <form method="post" action=".bottom.html#" method="POST" class="popup-form orderFormWrapper">
+            <select name="country" class="popup-select orderFormWrapperCountry"></select>
+            <input name="name" class="popup-input" type="text" placeholder="ФИО">
+            <input name="phone" class="popup-input" type="text" placeholder="Телефон">
+            <button type="submit" class="popup-btn">заказать по акции</button>
+         <input type="hidden" name="fingerprint"></form>
+
+         <h3 class="popup-cost">Всего за <span class="displayCurrentPrice">39&nbsp;руб.</span></h3>
+
+         <!-- <h4 class="popup-timer-title">До конца акции осталось</h4>
+
+         <div class="popup-timer-wrapper">
+            <div class="popup-timer-box">
+               <span class="popup-timer-box-val" id="hours"></span>
+               <span class="popup-timer-box-name">час</span>
+            </div>
+            :
+            <div class="popup-timer-box">
+               <span class="popup-timer-box-val" id="minuts"></span>
+               <span class="popup-timer-box-name">мин</span>
+            </div>
+            :
+            <div class="popup-timer-box">
+               <span class="popup-timer-box-val" id="seconds"></span>
+               <span class="popup-timer-box-name">сек</span>
+            </div>
+         </div> -->
+
+         <p class="popup-notify">оператор перезвонит вам <br> в течение 15 минут</p>
+      </div>
+   </div>
+   <!-- Popup end -->
+<div id="wrapper">
+	<div class="header">
+		<div class="wrap">
+			<div class="toggle_mnu">
+				<span class="sandwich">
+				<span class="sw-topper"></span>
+				<span class="sw-bottom"></span>
+				<span class="sw-footer"></span>
+				</span>
+			</div>
+			<ul class="nav">
+				<li><a href=".tb3.html">БОЛЕЗНИ</a></li>
+				<li><a href=".tb2.html">О ТОВАРЕ</a></li>
+				<li><a href=".tb12.html">ИСПЫТАНИЯ</a></li>
+				<li><a href=".tb10.html">СОСТАВ</a></li>
+				<li><a href=".tb14.html">МНЕНИЕ ВРАЧА</a></li>
+				<li><a href=".tb11.html">ОТЗЫВЫ</a></li>
+				<li><a href=".bottom.html">ЗАКАЗ И ОПЛАТА</a></li>
+			</ul>
+			<a href=".bottom.html#bottom" class="call">Оформить заказ</a>
+		</div>
+	</div>
+
+	<div class="top-box toping">
+		<div class="wrap">
+			<div class="heading">
+				<div class="h3">Свобода <br>движений - <br>Суставитин!</div>
+				<div class="h4">Инновационное средство <br>от болезней суставов <br>широкого спектра!</div>
+				<div class="tovar"><img  src="img/tovar.png" alt=""></div>
+				<ul class="list">
+					<li>
+						<img src="img/ic1.png" alt="">
+						<div class="t"><b>Останавливает</b> воспалительные процессы</div>
+					</li>
+					<li>
+						<img src="img/ic2.png" alt="">
+						<div class="t"><b>Профилактика</b> болезней суставов</div>
+					</li>
+					<li>
+						<img src="img/ic3.png" alt="">
+						<div class="t"><b>Стимулирует</b> вывод солей</div>
+					</li>
+					<li>
+						<img src="img/ic4.png" alt="">
+						<div class="t"><b>Лечит</b> артрит</div>
+					</li>
+					<li>
+						<img src="img/ic5.png" alt="">
+						<div class="t"><b>Снимает</b> боль</div>
+					</li>
+					<li>
+						<img src="img/ic6.png" alt="">
+						<div class="t"><b>Восстанавливает</b> хрящевую ткань</div>
+					</li>
+				</ul>
+			</div>
+			
+			
+
+			<div class="order-form-box">
+				<div class="white-box">
+				<div class="tt">
+					<div class="tt1">успей заказать <br><b>по акции -50%</b></div>
+					<div class="price">
+						<div class="old-price">
+							<span class="wv_old-price displayPrevPrice">78&nbsp;руб.</span>
+						</div>
+						<div class="new-price">
+							<span class="price-full displayCurrentPrice">39&nbsp;руб.</span>
+						</div>
+					</div>
+				</div>
+				<div class="cc">
+					<div class="tt3">До конца акции осталось:</div>
+					<div class="countdown" id='cd4'></div>
+					<ul class="words">
+						<li>Часы</li>
+						<li>Минуты</li>
+						<li>Секунды</li>
+					</ul>
+				</div>
+				<div class="tt">
+				<a href=".bottom.html#bottom" class="btn">Заказать сейчас</a>
+				<p style="margin-top: 10px;text-align: center;font-size: 12px; color:#fff"></p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ 
+
+	<div class="tb2">
+		<div class="wrap">
+			<div class="right">
+				<div class="h3">Всемирная организация здравоохранения</div>
+				<div class="text">По данным ВОЗ по распространённости болезни суставов находятся на третьем месте после болезней систем кровообращения и пищеварения и на первом месте в ряду причин временной нетрудоспособности людей.</div>
+			</div>
+		</div>
+	</div>
+ 	
+ 	<div class="tb3">
+ 		<div class="wrap">
+ 			<div class="title-h3">БОЛЕЗНИ СУСТАВОВ МОГУТ <br>СТАТЬ ПРИЧИНОЙ <span>ИНВАЛИДНОСТИ!</span></div>
+ 			<ul class="list">
+ 				<li>
+ 					<img src="img/tb3-1.jpg" alt="">
+ 					<div class="t">Артрит</div>
+ 				</li>
+ 				<li>
+ 					<img src="img/tb3-2.jpg" alt="">
+ 					<div class="t">Артроз</div>
+ 				</li>
+ 				<li>
+ 					<img src="img/tb3-3.jpg" alt="">
+ 					<div class="t">Бурсит</div>
+ 				</li>
+ 				<li>
+ 					<img src="img/tb3-4.jpg" alt="">
+ 					<div class="t">Подагра</div>
+ 				</li>
+ 				<li>
+ 					<img src="img/tb3-5.jpg" alt="">
+ 					<div class="t">Пяточная шпора</div>
+ 				</li>
+ 			</ul>
+ 		</div>
+ 	</div>
+
+ 	<div class="tb10">
+ 		<div class="wrap">
+ 			<div class="title-h3 bla">В состав коллагенового крема <br>СУСТАВИТИН входят:</div>
+ 			<div class="tov">
+ 				<div class="img"><img src="img/tov.png" alt=""></div>
+ 			</div>
+ 			<div class="fr-box fr-box1 fr-l">
+ 				<div class="img"><img src="img/5.png" alt=""></div>
+ 				<div class="tt">
+ 					<div class="t1">Зверобой</div>
+ 					<p>Зверобой – уникальное растение, обладающее целым спектром полезных свойств. В старину его называли «лекарством от 100 хворей»</p>
+ 				</div>
+ 			</div>
+ 			<div class="fr-box fr-box2 fr-l">
+ 				<div class="img"><img src="img/6.png" alt=""></div>
+ 				<div class="tt">
+ 					<div class="t1">Крапива</div>
+ 					<p>Крапива - ценное поливитаминное растение, своеобразный природный концентрат витаминов.</p>
+ 				</div>
+ 			</div>
+ 			<div class="fr-box fr-box3 fr-l">
+ 				<div class="img"><img src="img/7.png" alt=""></div>
+ 				<div class="tt">
+ 					<div class="t1">Женшень</div>
+ 					<p>Корень женьшеня сильно влияет на центральную нервную систему, приводя ее в рабочее состояние без отрицательных последствий.</p>
+ 				</div>
+ 			</div>
+ 			<div class="fr-box fr-box4 fr-r">
+ 				<div class="img"><img src="img/8.png" alt=""></div>
+ 				<div class="tt">
+ 					<div class="t1">Черника</div>
+ 					<p>Обладает хорошим противовоспалительным действием. Используется при ревматизме, заболеваниях желчного пузыря и печени.</p>
+ 				</div>
+ 			</div>
+ 			<div class="fr-box fr-box5 fr-r">
+ 				<div class="img"><img src="img/9.png" alt=""></div>
+ 				<div class="tt">
+ 					<div class="t1">Лапчатка</div>
+ 					<p>Лапчатка является превосходным мочегонным средством. Кроме того, её зачастую используют и в качестве обезболивающего средства.</p>
+ 				</div>
+ 			</div>
+ 			<div class="fr-box fr-box6 fr-r">
+ 				<div class="img"><img src="img/10.png" alt=""></div>
+ 				<div class="tt">
+ 					<div class="t1">Мелисса</div>
+ 					<p>В первую очередь, мелисса — богатый источник витамина «С» и множества микроэлементов — магния, цинка, калия, молибдена, селена, марганца, меди. В листьях много эфирного масла и органической кислоты.</p>
+ 				</div>
+ 			</div>
+ 			<div class="text">
+ 				<div class="h3">Полный список состава:</div>
+ 				<p>биовытяжки пантов алтайского марала, крови алтайского марала, мяса алтайского марала, фибриллярный биогенный коллаген из мяса марала, вытяжки корневищ сабельника болотного, биогенного прополиса, цветков клевера, листьев лавра благородного, коры ивы белой, травы мелиссы, травы лофанта тибетского, корневищ женьшеня, плодов облепихи, корневищ красного корня, корневищ девясила, черемши, травы крапивы, травы зверобоя, листьев гинкго билоба, цветков клевера, печени акулы, плодов черники обыкновенной, ятрышника, ярутки, корней одуванчика, корней лопуха, корневищ осоки, коры берёзы, весёлки, шиитаке, уснеи, леспедецы, лапчатки, луковиц гарпагофитума, семян араманта, масло кедровое, масло тыквенное, масло конопляное, подмор пчелиный, масло пихтовое, маточное молочко, живица кедровая, масло облепиховое, живица лиственная, масло чайного дерева, масло гвоздичное, каменное масло, бобровая струя, жир бобровый.</p>
+ 			</div>
+ 		</div>
+ 	</div>
+
+	<div class="tb12">
+		<div class="wrap">
+			<div class="title-h3 bla">Результаты клинических исследований <br>коллагенового крема СУСТАВИТИН</div>
+			<div class="frame">
+				<div class="tab-wr">
+					<table class="table">
+						<tr>
+							<td></td>
+							<td><div class="tt t1">До исследования:</div></td>
+							<td><div class="tt t2">Плацебо:</div></td>
+							<td><div class="tt t3">Суставитин:</div></td>
+						</tr>
+						<tr>
+							<td><div class="t">Боль в течение ночи</div></td>
+							<td><div class="n n1">60%</div></td>
+							<td><div class="n n2">57%</div></td>
+							<td><div class="n n3">4%</div></td>
+						</tr>
+						<tr>
+							<td><div class="t">Боль при ходьбе</div></td>
+							<td><div class="n n1">90%</div></td>
+							<td><div class="n n2">85%</div></td>
+							<td><div class="n n3">53%</div></td>
+						</tr>
+						<tr>
+							<td><div class="t">Боль в положении сидя</div></td>
+							<td><div class="n n1">50%</div></td>
+							<td><div class="n n2">47%</div></td>
+							<td><div class="n n3">10%</div></td>
+						</tr>
+						<tr>
+							<td><div class="t">Утренняя скованность</div></td>
+							<td><div class="n n1">90%</div></td>
+							<td><div class="n n2">85%</div></td>
+							<td><div class="n n3">13%</div></td>
+						</tr>
+						<tr>
+							<td><div class="t">Усиление боли в положении стоя (30 мин)</div></td>
+							<td><div class="n n1">97%</div></td>
+							<td><div class="n n2">96%</div></td>
+							<td><div class="n n3">50%</div></td>
+						</tr>
+						<tr>
+							<td><div class="t">Отечность</div></td>
+							<td><div class="n n1">90%</div></td>
+							<td><div class="n n2">87%</div></td>
+							<td><div class="n n3">4%</div></td>
+						</tr>
+						<tr>
+							<td><div class="t">Нарушение амортизации суставов</div></td>
+							<td><div class="n n1">80%</div></td>
+							<td><div class="n n2">76%</div></td>
+							<td><div class="n n3">50%</div></td>
+						</tr>
+					</table>
+				</div>
+				<div class="ttt">* Исследования проводились в условиях стационарного пребывания пациентов в возрасте от 25 до 75 лет</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="tb13">
+		<div class="wrap">
+			<img src="img/tov.png" alt="" class="tov">
+			<div class="right">
+				<div class="title-h3 bla"><span>Инструкция</span> по применению</div>
+				<div class="sep"></div>
+				<p><b>Наносить Суставитин на повреждённые суставы в два раза в сутки. Курс лечения продолжать 30 дней. При необходимости повторить курс после 10 дней с момента последнего нанесения Суставитина.
+</b></p>
+				<p>Для лечения травматических болезней суставов рекомендуется нанесение средства не реже 3 раз в день.
+</p>
+				<p>Для профилактики и лечения возрастных болезней суставов рекомендуется проходить курс лечения Суставитином в течение 5 дней ежемесячно.
+</p>
+				<p>Противопоказания: индивидуальная аллергия на компоненты крема; возраст до 5 лет.
+</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="tb14">
+		<div class="wrap">
+			<div class="text">
+				<div class="title-h3 bla">Мнение <span>специалиста</span></div>
+				<p><b>Коллагеновые кремы – это будущее в области лечения болезней суставов, которое, к счастью, многим доступно уже сейчас. Из всех средств такого типа я однозначно рекомендую коллагеновый крем Суставитин – это сочетание коллагена с натуральными растительными препаратами, собранными в такой пропорции, чтобы их эффективность была максимальной.</b></p>
+				<p>Назначая своим пациентам Суставитин, я с удовольствием наблюдаю, как они, еще вчера приходившие на прием с палочкой или даже костылями, свободно двигаются, могут сами себя обслуживать и даже начинают заниматься спортом. Разумеется, чем раньше начать использование Суставитина при лечении артрита, артроза, подагры и т.д., тем лучшим будет результат. Количество больных, которые избавились от своего недуга с помощью этого крема, уже превысило 1000 человек!</p>
+				<div class="sign">
+					<img src="img/sign1.png" alt="">
+					<div class="t1">ДМИТРИЙ <br>БОЛГАРИН</div>
+					<div class="t2">врач-остеопат</div>
+					<img src="img/sign2.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tb15">
+		<div class="wrap">
+			<div class="t">Коллагеновый крем Суставитин <br>признан продуктом года по версии <br>журнала «Здоровье» за 2015 год.</div>
+		</div>
+	</div>
+
+
+ 	<div class="tb11">
+ 		<div class="wrap">
+ 			<div class="title-h3 bla">Отзывы пациентов</div>
+ 			<div class="row">
+ 				<div class="col-md-4 col-sm-12">
+ 					<div class="rev-item">
+ 						<div class="pers">
+ 							<img src="img/111.png" alt="">
+ 							<div class="tt">
+ 								<div class="t1">ЛЮДМИЛА <br>БОЯРЫШНИКОВ <br><span>38 ЛЕТ</span></div>
+ 							</div>
+ 						</div>
+ 						<p>С детства мучилась от артрита, к сожалению, все лекарства и процедуры могли лишь временно обеспечить какое-то облегчение. Я так завидовала одноклассникам, которые могли на физкультуре бегать, играть в волейбол, проходить полосу препятствий… Мне это стало доступно только в 38 лет, когда я избавилась от своего недуга с помощью Суставитина. Сегодня я получаю огромное удовольствие от небольших пробежек и веду активный образ жизни!</p>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-4 col-sm-12">
+ 					<div class="rev-item">
+ 						<div class="pers">
+ 							<img src="img/222.png" alt="">
+ 							<div class="tt">
+ 								<div class="t1">ГАЛИНА <br>СТОГОВА <br><span>29 ЛЕТ</span></div>
+ 							</div>
+ 						</div>
+ 						<p>Хочется поблагодарить производителей крема Суставитин. Это средство помогло моей бабушке, она живёт в деревне. Страдала от подагры, особенно в дождливую погоду жаловалась, что пальцы ломит. В город к нам же ни в какую не хотела переезжать. Лечилась своими травками, ванночками, но без особого успеха. Тогда моя мама привезла ей комплекс Суставитин, посоветовав мазаться. Потом она звонила нам, благодарила, сказала, что все полностью прошло. Теперь бабуля в любую погоду бодрая и веселая, дай ей Бог здоровья!</p>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-4 col-sm-12">
+ 					<div class="rev-item">
+ 						<div class="pers">
+ 							<img src="img/333.png" alt="">
+ 							<div class="tt">
+ 								<div class="t1">ПАВЕЛ <br>ПИСЕЦКИЙ <br><span>41 ГОД</span></div>
+ 							</div>
+ 						</div>
+ 						<p>Ушел из тяжелой атлетики мастером спорта, поскольку здоровье уже не позволяло идти дальше. Те, кто занимался, меня поймут – после множества соревнований был уже весь «битый». После этого работал на стройке, в общем – суставы были как у 70-летнего. Доктор посоветовал мне пройти курс Суставитина, я почитал – вроде бы отзывы были неплохие, купил и лечился. И действительно, постепенно суставы вернулись в норму! Делал повторно снимок – практически вся ткань полностью восстановилось. В большой спорт уже, конечно, не вернусь, но в тренажерку хожу с удовольствием и чувствую себя здоровым.</p>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+
+ 	<div id="bottom" class="top-box bottom">
+		<div class="wrap">
+			<div class="heading">
+				<div class="h3">Свобода <br>движений - <br>Суставитин!</div>
+				<div class="h4">Инновационное средство <br>от болезней суставов <br>широкого спектра!</div>
+				<div class="tovar"><img  src="img/tovar.png" alt=""></div>
+				<ul class="list">
+					<li>
+						<img src="img/ic1.png" alt="">
+						<div class="t"><b>Останавливает</b> воспалительные процессы</div>
+					</li>
+					<li>
+						<img src="img/ic2.png" alt="">
+						<div class="t"><b>Профилактика</b> болезней суставов</div>
+					</li>
+					<li>
+						<img src="img/ic3.png" alt="">
+						<div class="t"><b>Стимулирует</b> вывод солей</div>
+					</li>
+					<li>
+						<img src="img/ic4.png" alt="">
+						<div class="t"><b>Лечит</b> артрит</div>
+					</li>
+					<li>
+						<img src="img/ic5.png" alt="">
+						<div class="t"><b>Снимает</b> боль</div>
+					</li>
+					<li>
+						<img src="img/ic6.png" alt="">
+						<div class="t"><b>Восстанавливает</b> хрящевую ткань</div>
+					</li>
+				</ul>
+			</div>
+			
+			
+
+			<div class="order-form-box">
+				<div class="white-box">
+				<div class="tt">
+					<div class="tt1">успей заказать <br><b>по акции -50%</b></div>
+					<div class="price">
+						<div class="old-price">
+							<span class="wv_old-price displayPrevPrice">78&nbsp;руб.</span>
+						</div>
+						<div class="new-price">
+							<span class="price-full displayCurrentPrice">39&nbsp;руб.</span>
+						</div>
+					</div>
+				</div>
+				<div class="cc">
+					<div class="tt3">До конца акции осталось:</div>
+					<div class="countdown" id='cd3'></div>
+					<ul class="words">
+						<li>Часы</li>
+						<li>Минуты</li>
+						<li>Секунды</li>
+					</ul>
+				</div>
+				<div class="tt">
+				<a href=".bottom.html#bottom" class="btn">Заказать сейчас</a>
+				<p style="margin-top: 10px;text-align: center;font-size: 12px"></p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer style="padding: 15px 0;text-align: center;">BOMBOFFERS LP<br>Company number SL029947, 272 Bath Street, Glasgow, Scotland, G2 4JR<br></footer>
+ 
+	 
+</div>
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src=http://v40.sustavitin.biz/libs/html5shiv/es5-shim.min.js></script>
+	<script src=http://v40.sustavitin.biz/libs/html5shiv/html5shiv.min.js></script>
+	<script src=http://v40.sustavitin.biz/libs/html5shiv/html5shiv-printshiv.min.js></script>
+	<script src=http://v40.sustavitin.biz/libs/respond/respond.min.js></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="js/scriptoto.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/common.js"></script>
+
+	
+
+
+<script src="widgets/jquery.inputmask.bundle.js"></script><script src="widgets/phone.js"></script>
+
+<script src='widgets/app.js'></script>
+<script>window.allPrices={"BY":{"userId":null,"countryId":2,"code":"BY","title":"\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u044c","cost":39,"price":null,"oldPrice":78,"fakePrice":78,"currency":"\u0440\u0443\u0431.                ","country":"BY","type":1},"KZ":{"userId":null,"countryId":4,"code":"KZ","title":"\u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d","cost":6990,"price":null,"oldPrice":13980,"fakePrice":13980,"currency":"\u20b8                   ","country":"KZ","type":1},"KG":{"userId":null,"countryId":5,"code":"KG","title":"\u041a\u0438\u0440\u0433\u0438\u0437\u0438\u044f","cost":1690,"price":null,"oldPrice":2380,"fakePrice":2380,"currency":"\u0441                   ","country":"KG","type":1},"MD":{"userId":null,"countryId":12,"code":"MD","title":"\u041c\u043e\u043b\u0434\u0430\u0432\u0438\u044f","cost":399,"price":null,"oldPrice":798,"fakePrice":798,"currency":"Lei MD              ","country":"MD","type":1}}</script>
+<script>window.pageType='landing'</script>
+
+
+
+
+    <!-- vk counter -->
+    <!-- //vk counter -->
+
+
+<script>
+
+</script>
+ </body>
+</html>
