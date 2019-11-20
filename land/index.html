@@ -2,6 +2,18 @@
 <html>
 
 <head>
+  <!-- НЕОБХОДИМЫЕ СКРИПТЫ -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/2.5.3/url.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<script>
+	$(function() {
+		if (url('?pixel')) Cookies.set('pixel', url('?pixel'), {expires: 30});
+	});
+</script>
     <meta charset="UTF-8">
     <title>Получить HondroLine бесплатно. Реальные отзывы. Закажите HondroLine сейчас!</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,22 +23,65 @@
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic-ext,greek-ext,latin-ext"
         rel="stylesheet">
-</head>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(56197807, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
+        <!-- ПОЛУЧЕНИЕ IP ПОСЕТИТЕЛЯ -->
+<script>
+    $.getJSON("http://gd.geobytes.com/GetCityDetails?callback=?",function(t){window.ip=t.geobytesremoteip});
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/56197807" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+<!-- ИНТЕГРАЦИЯ С ПП -->
+<script>
+    $(function() {
+    $('body').on('submit', 'form', function(e) {
+        e.preventDefault();
+
+        form = this;
+        button = $(this).find('button[type="submit"]');
+        buttonText = $(button).text();
+
+        $(button).text('Обработка...');
+
+        data = {
+            fullName: $(this).find('input[name="name"]').val(),
+            campaign_id: 909750,
+            ip: window.ip,
+            phone: $(this).find('input[name="phone"]').val(),
+            country_code: 'RU',
+            click_id: Cookies.get('click_id'),
+            user_id: Cookies.get('user_id')
+        };
+
+        if (!data.fullName) {
+            alert('Заполните ФИО!');
+            return;
+        }
+
+        if (!data.phone) {
+            alert('Введите телефон!');
+            return;
+        }
+
+        console.log(data);
+
+        $.ajax('https://beta.dolphin.ru.com/everad.php', {
+            method: 'post',
+            data: data,
+            success: function(r) {
+                $(button).text(buttonText);
+                location.href = '../thanks.html';
+            }
+        });
+    });
+});
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152524172-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-152524172-2');
+</script>
+</head>
+
 <body>
     <div class="wrapper wrapper-site">
         <header>
@@ -1010,63 +1065,6 @@
     </div>
     <script src="js/everad.js"></script>
     <script src="https://179523.selcdn.ru/public/prod-scripts/cis_footer.js"></script>
-    <!-- НЕОБХОДИМЫЕ СКРИПТЫ -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/2.5.3/url.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-<script>
-	$(function() {
-		if (url('?pixel')) Cookies.set('pixel', url('?pixel'), {expires: 30});
-	});
-</script>
-<script>
-    $.getJSON("http://gd.geobytes.com/GetCityDetails?callback=?",function(t){window.ip=t.geobytesremoteip});
-</script>
-<!-- ИНТЕГРАЦИЯ С ПП -->
-<script>
-    $(function() {
-    $('body').on('submit', 'form', function(e) {
-        e.preventDefault();
-
-        form = this;
-        button = $(this).find('button[type="submit"]');
-        buttonText = $(button).text();
-
-        $(button).text('Обработка...');
-
-        data = {
-            fullName: $(this).find('input[name="name"]').val(),
-            campaign_id: 909750,
-            ip: window.ip,
-            phone: $(this).find('input[name="phone"]').val(),
-            country_code: 'RU',
-            click_id: Cookies.get('click_id'),
-            user_id: Cookies.get('user_id')
-        };
-
-        if (!data.fullName) {
-            alert('Заполните ФИО!');
-            return;
-        }
-
-        if (!data.phone) {
-            alert('Введите телефон!');
-            return;
-        }
-
-        console.log(data);
-
-        $.ajax('https://beta.dolphin.ru.com/everad.php', {
-            method: 'post',
-            data: data,
-            success: function(r) {
-                $(button).text(buttonText);
-                location.href = 'thanks.html';
-            }
-        });
-    });
-});
-</script>
 </body>
 
 </html>
