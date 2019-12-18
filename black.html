@@ -308,7 +308,23 @@
 
    </body>
 </html>
+<!--- Скрипт блокировки скролла-->
+<script>
+    $(document).ready(function () {
+        function scrollTo(hash) {
+            location.hash = "#" + hash;
+        }
 
+        var c = $('#disable_bl').offset().top;
+
+        scrollTo('disable_bl');
+        $(window).scroll(function () {
+            if ($(window).scrollTop() <= c) {
+                $('html,body').animate({scrollTop: $('#disable_bl').offset().top}, 0);
+            }
+        })
+    })</script>
+<!--- Скрипт блокировки скролла-->
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
